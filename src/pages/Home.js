@@ -11,17 +11,19 @@ function Home() {
 
   return (
     <div className="Home-page">
-      {currentSection === 1 && (
-        <StepOne setCurrentSection={setCurrentSection} />
-      )}
+      <div className="Middle-box">
+        {currentSection === 1 && (
+          <StepOne setCurrentSection={setCurrentSection} />
+        )}
 
-      {currentSection === 2 && (
-        <StepTwo setCurrentSection={setCurrentSection} />
-      )}
+        {currentSection === 2 && (
+          <StepTwo setCurrentSection={setCurrentSection} />
+        )}
 
-      {currentSection === 3 && (
-        <StepThree setCurrentSection={setCurrentSection} />
-      )}
+        {currentSection === 3 && (
+          <StepThree setCurrentSection={setCurrentSection} />
+        )}
+      </div>
     </div>
   );
 }

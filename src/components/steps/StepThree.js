@@ -2,12 +2,13 @@ import React from "react";
 
 // Components
 import MoveButton from "../MoveButton";
+import Heading from "../Heading";
 
 function StepThree(props) {
   const { setCurrentSection } = props;
   return (
     <div>
-      <h1>Step 3: Select Your Exercises</h1>
+      <Heading text={"Step 3: Select Your Exercises"} />
       <MoveButton
         setCurrentSection={setCurrentSection}
         nextSection={2}
