@@ -7,7 +7,7 @@ function StepOne(props) {
   const { setCurrentSection } = props;
   return (
     <div className="Step-One">
-      <h1>Step 1: Enter Your Days Per Week</h1>
+      <h1>Step 1: Select Your Days Per Week</h1>
       <MoveButton
         setCurrentSection={setCurrentSection}
         nextSection={2}
