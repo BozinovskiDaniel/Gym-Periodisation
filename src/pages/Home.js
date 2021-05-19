@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styling/Home.css";
+import logo from "../images/logo.png";
 
 // Components
 import StepOne from "../components/steps/StepOne";
@@ -12,6 +13,7 @@ function Home() {
   return (
     <div className="Home-page">
       <div className="Middle-box">
+        <img src={logo} alt="logo" className="logo" />
         {currentSection === 1 && (
           <StepOne setCurrentSection={setCurrentSection} />
         )}

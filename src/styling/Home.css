@@ -12,6 +12,7 @@
   padding: 1em;
   border-radius: 5px;
   width: 50%;
+  text-align: center;
 }
 
 .Move-button {
@@ -21,9 +22,16 @@
   border-radius: 5px;
   margin: 5px;
   color: white;
+  font-size: 1.2em;
+  margin-top: 20px;
 }
 
 .Move-button:hover {
   cursor: pointer;
   background-color: rgba(101, 157, 189, 1);
+}
+
+.logo {
+  height: 50px;
+  width: 70px;
 }

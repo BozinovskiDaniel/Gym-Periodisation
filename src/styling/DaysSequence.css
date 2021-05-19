@@ -1,0 +1,17 @@
+.main-grid {
+  display: inline;
+}
+
+.day-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgba(141, 135, 65, 0.5);
+  font-size: 0.8em;
+}
+
+.day-button:hover {
+  cursor: pointer;
+  background-color: rgba(141, 135, 65, 1);
+}
