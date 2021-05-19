@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "../styling/Home.css";
 
-// Redux
-import { connect } from "react-redux";
-
 // Components
 import StepOne from "../components/steps/StepOne";
 import StepTwo from "../components/steps/StepTwo";
@@ -14,11 +11,17 @@ function Home() {
 
   return (
     <div className="Home-page">
-      {currentSection === 1 && <StepOne />}
+      {currentSection === 1 && (
+        <StepOne setCurrentSection={setCurrentSection} />
+      )}
 
-      {currentSection === 2 && <StepTwo />}
+      {currentSection === 2 && (
+        <StepTwo setCurrentSection={setCurrentSection} />
+      )}
 
-      {currentSection === 3 && <StepThree />}
+      {currentSection === 3 && (
+        <StepThree setCurrentSection={setCurrentSection} />
+      )}
     </div>
   );
 }

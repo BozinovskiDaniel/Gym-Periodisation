@@ -3,3 +3,17 @@
   height: 100vh;
   width: 100%;
 }
+
+.Move-button {
+  background-color: rgba(101, 157, 189, 0.8);
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
+
+.Move-button:hover {
+  cursor: pointer;
+  background-color: rgba(101, 157, 189, 1);
+}
