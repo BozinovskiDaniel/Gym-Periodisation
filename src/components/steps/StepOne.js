@@ -23,11 +23,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function StepOne(props) {
+function StepOne({ value, setValue, setCurrentSection }) {
   const classes = useStyles();
-  const { setCurrentSection } = props;
-
-  const [value, setValue] = useState(3);
 
   const handleChange = (e) => {
     setValue(e.target.value);

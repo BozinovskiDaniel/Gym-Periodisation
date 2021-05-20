@@ -1,13 +1,14 @@
 .main-grid {
-  display: inline;
+  display: inline-block;
+  width: 100%;
 }
 
 .day-button {
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 5px;
-  background-color: rgba(141, 135, 65, 0.5);
+  background-color: rgba(141, 135, 65, 0.6);
   font-size: 0.8em;
 }
 
