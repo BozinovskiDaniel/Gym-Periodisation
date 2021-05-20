@@ -6,7 +6,7 @@ import "../styling/DaysSequence.css";
 // Material UI
 import Button from "@material-ui/core/Button";
 
-function DaysSequence({ setDays, days }) {
+function DaysSequence({ setDays, days, value }) {
   // Checks if the day is selected
   const checkIfDaySelected = (givenDay) => {
     for (let i = 0; i < days.length; i++) {
@@ -32,8 +32,10 @@ function DaysSequence({ setDays, days }) {
 
       setDays(daysCopy); // Set the state of new array
     } else {
-      // Add the day
-      setDays([...days, givenDay]);
+      if (days.length < value) {
+        // Add the day
+        setDays([...days, givenDay]);
+      }
     }
   };
 

@@ -24,7 +24,7 @@ function Home() {
         )}
 
         {currentSection === 2 && (
-          <StepTwo setCurrentSection={setCurrentSection} />
+          <StepTwo value={value} setCurrentSection={setCurrentSection} />
         )}
 
         {currentSection === 3 && (
