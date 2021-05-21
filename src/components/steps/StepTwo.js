@@ -11,9 +11,7 @@ import "../../styling/StepTwo.css";
 // Material UI
 import DoneIcon from "@material-ui/icons/Done";
 
-function StepTwo({ setCurrentSection, value }) {
-  const [days, setDays] = useState([]);
-
+function StepTwo({ setCurrentSection, value, days, setDays }) {
   return (
     <div>
       <Heading text={"Step 2: Select What Days You Prefer"} />
@@ -27,13 +25,13 @@ function StepTwo({ setCurrentSection, value }) {
 
       <MoveButton
         setCurrentSection={setCurrentSection}
-        nextSection={3}
-        text={"Next"}
+        nextSection={1}
+        text={"Back"}
       />
       <MoveButton
         setCurrentSection={setCurrentSection}
-        nextSection={1}
-        text={"Back"}
+        nextSection={3}
+        text={"Next"}
       />
     </div>
   );

@@ -3,12 +3,15 @@ import React from "react";
 // Components
 import MoveButton from "../MoveButton";
 import Heading from "../Heading";
+import SelectionModal from "../ExerciseSelection/SelectionModal";
 
-function StepThree(props) {
-  const { setCurrentSection } = props;
+function StepThree({ setCurrentSection, days }) {
   return (
     <div>
       <Heading text={"Step 3: Select Your Exercises"} />
+
+      <SelectionModal days={days} />
+
       <MoveButton
         setCurrentSection={setCurrentSection}
         nextSection={2}

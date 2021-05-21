@@ -10,6 +10,7 @@ import StepThree from "../components/steps/StepThree";
 function Home() {
   const [currentSection, setCurrentSection] = useState(1);
   const [value, setValue] = useState(3);
+  const [days, setDays] = useState([]);
 
   return (
     <div className="Home-page">
@@ -24,11 +25,16 @@ function Home() {
         )}
 
         {currentSection === 2 && (
-          <StepTwo value={value} setCurrentSection={setCurrentSection} />
+          <StepTwo
+            days={days}
+            setDays={setDays}
+            value={value}
+            setCurrentSection={setCurrentSection}
+          />
         )}
 
         {currentSection === 3 && (
-          <StepThree setCurrentSection={setCurrentSection} />
+          <StepThree days={days} setCurrentSection={setCurrentSection} />
         )}
       </div>
     </div>

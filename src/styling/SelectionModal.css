@@ -1,0 +1,14 @@
+.selection-modal {
+  display: flex;
+  background-color: #f1f1f1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.left-modal {
+  flex: 0 0 50%;
+}
+
+.right-modal {
+  flex: 1;
+}
