@@ -5,7 +5,7 @@ function Tabs({ days }) {
   return (
     <div className="left-modal">
       {days.map((d) => {
-        return d;
+        return <button>{d}</button>;
       })}
     </div>
   );
