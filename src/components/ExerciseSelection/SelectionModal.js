@@ -9,7 +9,7 @@ function SelectionModal({ days }) {
     <div className="selection-modal">
       <Tabs days={days} />
 
-      <div className="right-modal">right</div>
+      <div className="right-modal"></div>
     </div>
   );
 }
